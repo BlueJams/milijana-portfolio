@@ -29,14 +29,14 @@ section {
     top: 0;
     background: #111;
     padding: 16px;
-    z-index: 100;
+    z-index: 300;
 }
 
 .nav {
     display: flex;
     gap: 24px;
     justify-content: center;
-    
+    width: 100%;
     
     border: none;
     background: #0f1014;
@@ -1628,26 +1628,37 @@ button.read-more:hover {
     box-shadow: 0 0 8px rgba(0,255,255,.8);
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+
     .nav {
         position: fixed;
         inset: 0;
-        background: rgba(0,0,0,.95);
+        background: rgba(5, 10, 20, 0.95);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translateY(-100%);
-        transition: transform .4s ease;
-        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
     }
 
     .nav.active {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .nav-toggle {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 400;
+    }
+
+    .nav-toggle span {
         display: block;
-        z-index: 1000;
+        width: 28px;
+        height: 3px;
+        background: cyan;
+        margin: 6px 0;
+        box-shadow: 0 0 8px cyan;
     }
 }

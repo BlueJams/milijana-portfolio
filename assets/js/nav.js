@@ -1,8 +1,9 @@
-const links = document.querySelectorAll('.nav a');
+const navLinks = document.querySelectorAll('.nav a');
+
 const sections = document.querySelectorAll('section');
 
 /* Smooth scrolling */
-links.forEach(link => {
+navLinks.forEach(link => {
     link.addEventListener('click', e => {
         e.preventDefault();
 
@@ -13,10 +14,10 @@ links.forEach(link => {
             target.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // ✅ CLOSE MOBILE NAV AFTER CLICK
         nav.classList.remove('active');
     });
 });
+
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         modal.style.display = 'none';
@@ -34,12 +35,12 @@ window.addEventListener('scroll', () => {
         }
     });
 
-links.forEach(link => {
-    link.classList.remove('active');
-
-    if (current && link.getAttribute('href').includes(current)) {
-        link.classList.add('active');
-    }
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (current && link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
+    });
 });
 
 
