@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4D+9caGjZsK3C0B6x5b6y0Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#games">Projects</a>
+        <a href="#Education">Education</a>
+        <a href="#Experience">Experience</a>
+        <a href="#FunFacts">Fun Facts</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<main>
+    <!-- Overview Section -->
+    <section id="overview" class="overview-section">
+        <!-- Animated background -->
+        <canvas id="overview-bg"></canvas>
+
+        <div class="overview-container">
+            <!-- LEFT COLUMN: image + skills -->
+            <div class="overview-left-column">
+                <div class="overview-image">
+                    <img src="assets/img/studio.jpg" alt="Studio Image">
+                
+
+                <div class="skills-container">
+                    <h3>Skill Highlights</h3>
+                    <div class="skills-grid">
+                        <!-- C++ -->
+                        <div class="skill-card">
+                            <img src="assets/img/c++.png" alt="C++ Icon">
+                            <h4>C++</h4>
+                            <p>Efficient system-level programming, algorithms, and performance-critical applications.</p>
+                        </div>
+                        <!-- C# -->
+                        <div class="skill-card">
+                            <img src="assets/img/csharp.png" alt="C# Icon">
+                            <h4>C#</h4>
+                            <p>Desktop apps, Unity game development, and .NET web applications.</p>
+                        </div>
+                        <!-- SQL -->
+                        <div class="skill-card">
+                            <img src="assets/img/sql.png" alt="SQL Icon">
+                            <h4>SQL</h4>
+                            <p>Database design, queries, and managing relational databases efficiently.</p>
+                        </div>
+                        <!-- HTML -->
+                        <div class="skill-card">
+                            <img src="assets/img/html.png" alt="HTML Icon">
+                            <h4>HTML</h4>
+                            <p>Structuring web pages with semantic markup and accessibility in mind.</p>
+                        </div>
+                        <!-- CSS -->
+                        <div class="skill-card">
+                            <img src="assets/img/css.png" alt="CSS Icon">
+                            <h4>CSS</h4>
+                            <p>Styling responsive websites with modern layouts, animations, and effects.</p>
+                        </div>
+                        <!-- PHP -->
+                        <div class="skill-card">
+                            <img src="assets/img/php.png" alt="PHP Icon">
+                            <h4>PHP</h4>
+                            <p>Server-side programming, backend logic, and integration with databases.</p>
+                        </div>
+                        <!-- JavaScript -->
+                        <div class="skill-card">
+                            <img src="assets/img/javascript.png" alt="JS Icon">
+                            <h4>JavaScript</h4>
+                            <p>Dynamic client-side behavior, web interactivity, and SPA development.</p>
+                        </div>
+                        <!-- Python -->
+                        <div class="skill-card">
+                            <img src="assets/img/python.png" alt="Python Icon">
+                            <h4>Python</h4>
+                            <p>Data analysis, scripting, automation, and machine learning applications.</p>
+                        </div>
+                         
+   <div class="skill-card">
+    <div class="skill-icons">
+        <img src="assets/img/blender.png" alt="Blender Icon">
+        <img src="assets/img/unreal.png" alt="Unreal Engine Icon">
+    </div>
+
+    <h4>3D Development</h4>
+    <p>
+        3D asset creation, environment design, and interactive experiences using
+        Blender and Unreal Engine.
+    </p>
+</div>
+                    </div>
+                </div>
+            </div>
+ </div>
+            <!-- RIGHT COLUMN: overview text + languages -->
+            <div class="overview-right-column">
+                <div class="overview-text">
+                    <h2>Milijana Mijatovic</h2>
+                    <p>Software Developer, System Administrator, and Data Analyst with versatile experience spanning full-
+                    stack development, ERP & API integrations, global IT infrastructure, server management, and
+                    multilingual client communication. Background includes roles in Canadian tech (GIRO), German
+                    corporate environments, and U.S. military banking operations. Strong analytical ability, creative problem-
+                    solving, and the capacity to adapt technical solutions to diverse organizational needs.</p>
+
+                    <p class="neon-text">Goal Oriented</p>
+                    <p class="neon-text">Organised</p>
+                    <p class="neon-text">Creative</p>
+                    <p class="neon-text">Quick</p>
+                    <p class="neon-text">Communicative</p>
+                    <p class="neon-text">Team Player</p>
+
+                    <div class="language-circles">
+                        <h3>Languages</h3>
+                           <div class="circle-grid-wrapper">
+                        <div class="circle-grid">
+                        <!-- Language circle template -->
+                        <div class="circle" data-percent="100" data-level="native">
+                            <svg viewBox="0 0 120 120" class="neon-svg" overflow="visible">
+                                <defs>
+                                    <filter id="neon-strong" filterUnits="userSpaceOnUse" x="-60" y="-60" width="240" height="240">
+                                        <feGaussianBlur stdDeviation="3" result="b1"/>
+                                        <feGaussianBlur stdDeviation="6" result="b2"/>
+                                        <feGaussianBlur stdDeviation="10" result="b3"/>
+                                        <feMerge>
+                                            <feMergeNode in="b3"/>
+                                            <feMergeNode in="b2"/>
+                                            <feMergeNode in="b1"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <circle cx="60" cy="60" r="50" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="50" class="ring-progress" filter="url(#neon-strong)"/>
+                            </svg>
+                            <div class="circle-center">
+                                <div class="percent">100%</div>
+                                <div class="label">Native</div>
+                            </div>
+                            <div class="language-name">English</div>
+                        </div>
+
+                       <div class="circle" data-percent="100" data-level="native">
+                            <svg viewBox="0 0 120 120" class="neon-svg" overflow="visible">
+                                <defs>
+                                    <filter id="neon-strong" filterUnits="userSpaceOnUse" x="-60" y="-60" width="240" height="240">
+                                        <feGaussianBlur stdDeviation="3" result="b1"/>
+                                        <feGaussianBlur stdDeviation="6" result="b2"/>
+                                        <feGaussianBlur stdDeviation="10" result="b3"/>
+                                        <feMerge>
+                                            <feMergeNode in="b3"/>
+                                            <feMergeNode in="b2"/>
+                                            <feMergeNode in="b1"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <circle cx="60" cy="60" r="50" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="50" class="ring-progress" filter="url(#neon-strong)"/>
+                            </svg>
+                            <div class="circle-center">
+                                <div class="percent">100%</div>
+                                <div class="label">Native</div>
+                            </div>
+                            <div class="language-name">German</div>
+                        </div>
+
+                      <div class="circle" data-percent="100" data-level="native">
+                            <svg viewBox="0 0 120 120" class="neon-svg" overflow="visible">
+                                <defs>
+                                    <filter id="neon-strong" filterUnits="userSpaceOnUse" x="-60" y="-60" width="240" height="240">
+                                        <feGaussianBlur stdDeviation="3" result="b1"/>
+                                        <feGaussianBlur stdDeviation="6" result="b2"/>
+                                        <feGaussianBlur stdDeviation="10" result="b3"/>
+                                        <feMerge>
+                                            <feMergeNode in="b3"/>
+                                            <feMergeNode in="b2"/>
+                                            <feMergeNode in="b1"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <circle cx="60" cy="60" r="50" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="50" class="ring-progress" filter="url(#neon-strong)"/>
+                            </svg>
+                            <div class="circle-center">
+                                <div class="percent">100%</div>
+                                <div class="label">Native</div>
+                            </div>
+                            <div class="language-name">CRO/BOS/SRB</div>
+                        </div>
+
+                        <div class="circle" data-percent="80" data-level="fluent">
+                            <svg viewBox="0 0 120 120" class="neon-svg" overflow="visible">
+                                <defs>
+                                    <filter id="neon-strong" filterUnits="userSpaceOnUse" x="-60" y="-60" width="240" height="240">
+                                        <feGaussianBlur stdDeviation="3" result="b1"/>
+                                        <feGaussianBlur stdDeviation="6" result="b2"/>
+                                        <feGaussianBlur stdDeviation="10" result="b3"/>
+                                        <feMerge>
+                                            <feMergeNode in="b3"/>
+                                            <feMergeNode in="b2"/>
+                                            <feMergeNode in="b1"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <circle cx="60" cy="60" r="50" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="50" class="ring-progress" filter="url(#neon-strong)"/>
+                            </svg>
+                            <div class="circle-center">
+                                <div class="percent">80%</div>
+                                <div class="label">Fluent</div>
+                            </div>
+                            <div class="language-name">Spanish</div>
+                        </div>
+
+                       <div class="circle" data-percent="60" data-level="beginner">
+                            <svg viewBox="0 0 120 120" class="neon-svg" overflow="visible">
+                                <defs>
+                                    <filter id="neon-strong" filterUnits="userSpaceOnUse" x="-60" y="-60" width="240" height="240">
+                                        <feGaussianBlur stdDeviation="3" result="b1"/>
+                                        <feGaussianBlur stdDeviation="6" result="b2"/>
+                                        <feGaussianBlur stdDeviation="10" result="b3"/>
+                                        <feMerge>
+                                            <feMergeNode in="b3"/>
+                                            <feMergeNode in="b2"/>
+                                            <feMergeNode in="b1"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <circle cx="60" cy="60" r="50" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="50" class="ring-progress" filter="url(#neon-strong)"/>
+                            </svg>
+                            <div class="circle-center">
+                                <div class="percent">60%</div>
+                                <div class="label">Beginner</div>
+                            </div>
+                            <div class="language-name">Italian</div>
+                        </div>
+
+                        <div class="circle" data-percent="50" data-level="beginner">
+                            <svg viewBox="0 0 120 120" class="neon-svg" overflow="visible">
+                                <defs>
+                                    <filter id="neon-strong" filterUnits="userSpaceOnUse" x="-60" y="-60" width="240" height="240">
+                                        <feGaussianBlur stdDeviation="3" result="b1"/>
+                                        <feGaussianBlur stdDeviation="6" result="b2"/>
+                                        <feGaussianBlur stdDeviation="10" result="b3"/>
+                                        <feMerge>
+                                            <feMergeNode in="b3"/>
+                                            <feMergeNode in="b2"/>
+                                            <feMergeNode in="b1"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <circle cx="60" cy="60" r="50" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="50" class="ring-progress" filter="url(#neon-strong)"/>
+                            </svg>
+                            <div class="circle-center">
+                                <div class="percent">50%</div>
+                                <div class="label">Beginner</div>
+                            </div>
+                            <div class="language-name">French</div>
+                        </div>
+                    </div> <!-- end circle-grid -->
+                </div> <!-- end language-circles -->
+            </div> <!-- end overview-text -->
+            <div class="recommendation-quote">
+    <div class="quote-mark">''</div>
+
+    <p class="quote-text">
+        Ms. Mijatovic was a highly motivated employee with strong work ethics.
+        She persistently pursued the goals set for her and worked confidently and independently.
+        She consistently demonstrated eagerness to learn new processes.
+        Due to the diverse activities of the Bank, Ms. Mijatovic’s technical skills
+        were of great assistance. In summary, she was a valued employee who carried out
+        her duties to our full satisfaction.
+    </p>
+ <div class="quote-mark"></div>
+    <div class="quote-author">
+        - Supervisory Management<br>
+        <span>Bank of America</span>
+    </div>
+</div>
+        </div> <!-- end overview-container -->
+        
+     </div>
+        
+    </section>
+    
+    <!-- Projects Section -->
+    
+    <section id="games" class="reveal games-section">
+        <canvas id="projects-bg"></canvas>
+ <div class="section-title">
+    <span class="title-glow"></span>
+    <h1 class="title-text">Projects</h1>
+ </div>
+
+        <div class="games-grid">
+            <div class="game-card"
+     data-title="Inventari"
+     data-description="Inventari is a full-stack inventory management system designed for educational institutions for adults."
+     data-images='[
+  { "src": "assets/img/inventari1.png", "caption": "User permissions and roles defined Log-In" },
+  { "src": "assets/img/inventari2.png", "caption": "Main Dashboard Overview with Location, Relocation, Certfication and Printing functions" },
+  { "src": "assets/img/inventari3.png", "caption": "Inventory Items Overview and Management UI" },
+  { "src": "assets/img/inventari4.png", "caption": "Device Management UI with Print, Delete, Search and Outlook Ticket functions" }
+]'
+     data-tech="C#,WPF,.NET,SQL, VisualStudio">
+     
+    <img src="assets/img/inventari2.png" alt="Inventari">
+    <h3>Inventari</h3>
+    <p>Inventory Management System</p>
+    <button class="read-more">Read More</button>
+</div>
+             <div class="game-card"
+     data-title="Planzy"
+     data-description="Planzy is a full-stack web project ran using Electron, featuring a high detailed callendar, a diary, a mood tracker and a Pipeline Editor in creation."
+     data-images='[
+  { "src": "assets/img/planzy1.png", "caption": "Diary and Mood Tracking Interface" },
+  { "src": "assets/img/Planzy2.png", "caption": "Saved Diary and Mood Entries Interface that allows for deletion" },
+  { "src": "assets/img/Planzy5.png", "caption": "Callendar UI with scheduling function and detailed week/day overview" },
+  { "src": "assets/img/Planzy4.png", "caption": "Schedule Event Prototype design" }
+]'
+     data-tech="HTML,CSS,JavaScript,Electron">
+     
+    <img src="assets/img/Planzy6.png" alt="Planzy">
+    <h3>Planzy</h3>
+    <p>Time Management System</p>
+    <button class="read-more">Read More</button>
+</div>
+             <div class="game-card"
+     data-title="Mimi Blue Jam Factory"
+     data-description="Mimi Blue Jam Factory is an international music platform with a rich history of music, a collection of artists, partners and futuristic neon design."
+    data-images='[
+  { "src": "assets/img/MBJF.png", "caption": "Home Overview" },
+  { "src": "assets/img/MBJF5.png", "caption": "Contact Modal for all those interested in the project" },
+  { "src": "assets/img/MBJF3.png", "caption": "Artist Page Overview" },
+  { "src": "assets/img/MBJF4.png", "caption": "History of Music Overview" }
+]'
+     data-tech="HTML,CSS,JavaScript,PHP,Hostinger">
+     
+    <img src="assets/img/logo.png" alt="MimiBlueJamFactory">
+    <h3>Mimi Blue Jam Factory</h3>
+    <p>International Music Platform</p>
+    <button class="read-more">Read More</button>
+</div>
+<div class="game-card"
+     data-title="Mimolabs"
+     data-description="MimoLabs is a 3D asset production project specializing in Blender-based modeling, optimization, and pipeline integration for real-time engines, including Unreal Engine."
+   data-images='[
+  { "src": "assets/img/Mimolabs1.png", "caption": "Lamp Design in Blender, model view without texture." },
+  { "src": "assets/img/Mimolabs2.png", "caption": "Lamp Design in Blender, X-Ray view." },
+  { "src": "assets/img/Mimolabs3.png", "caption": "FBX export of the Lamp Design from Blender, in UE5, with texture." },
+  { "src": "assets/img/Mimolabs4.png", "caption": "Mini-character Design in Blender, all items merged." }
+]'
+     data-tech="Blender, UnrealEngine">
+     
+    <img src="assets/img/DigitalAsset6.png" alt="Mimolabs">
+    <h3>Mimolabs</h3>
+    <p>3D Digital Asset Creation</p>
+    <button class="read-more">Read More</button>
+
+        </div>
+        <div class="game-card"
+     data-title="Portfolio Website"
+     data-description="I built this website using XAMPP for PHP. The website features plenty animations written in JavaScript and PHP. The Website is hosted on Git, proving my involevemnt with the platform."
+   data-images='[
+  { "src": "assets/img/portfolio.png", "caption": "Main overview" },
+  { "src": "assets/img/portfolio2.png", "caption": "Background Script Code" },
+  { "src": "assets/img/portfolio3.png", "caption": "Experience Overview" },
+  { "src": "assets/img/portfolio4.png", "caption": "Project Overview Gallery Modal" }
+]'
+     data-tech="php, css, js, html">
+     
+    <img src="assets/img/portfolio.png" alt="Mimolabs">
+    <h3>Portfolio</h3>
+    <p>Personal Website Project</p>
+    <button class="read-more">Read More</button>
+
+        </div>
+         <div class="game-card"
+     data-title="Table Card Game"
+     data-description="This Table Card Game represents my Family House Rules of the centuries known card game Tablanette. It is a full-stack Electron project with plans of release in the first quartal of 2026."
+   data-images='[
+  { "src": "assets/img/Tabla.png", "caption": "Drawboard expanded to fit as many cards as needed" },
+  { "src": "assets/img/Tabla2.png", "caption": "Selected cards for taking with neon highlights" },
+  { "src": "assets/img/Tabla3.png", "caption": "Dark mode theme with music volume slider" },
+  { "src": "assets/img/Tabla4.png", "caption": "Light mode theme" }
+]'
+     data-tech="php, css, js, html, Electron">
+     
+    <img src="assets/img/Tabla1.png" alt="Table Card Game">
+    <h3>Table Card Game</h3>
+    <p>A full-stack Electron card game</p>
+    <button class="read-more">Read More</button>
+
+        </div>
+ 
+       
+       </section>
+    
+      <!-- Modal -->
+<div id="gameModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <!-- Gallery -->
+        <div class="modal-gallery" id="modalGallery"></div>
+
+        <!-- Description -->
+        <p id="modalDescription"></p>
+
+        <!-- Technologies -->
+        <div class="modal-tech" id="modalTech"></div>
+    </div>
+</div>
+</div>
+ 
+    <!-- Education Section -->
+ <section id="Education" class="reveal education-section">
+    <canvas id="education-bg"></canvas>
+    
+<div class="section-title">
+    <span class="title-glow"></span>
+    <h1 class="title-text">Education</h1>
+ </div>
+
+    <div class="education-cards">
+        <!-- WBS Training AG -->
+        <div class="education-card">
+            <h3>WBS Training AG (Wiesbaden, Germany)</h3>
+            <p class="degree">Computer Science (Application Development)</p>
+            <div class="courses">
+                <span class="course-tag">C#</span>
+                <span class="course-tag">C</span>
+                <span class="course-tag">C++</span>
+                <span class="course-tag">SQL</span>
+                <span class="course-tag">Oracle</span>
+                <span class="course-tag">HTML</span>
+                <span class="course-tag">CSS</span>
+                <span class="course-tag">JavaScript</span>
+                <span class="course-tag">Hardware Infrastructure</span>
+            </div>
+            <div class="internships">
+                <span class="internship-tag">Donner & Partner GmbH (Junior Software Dev Internship)</span>
+            </div>
+            <p class="dates">2019-2021</p>
+        </div>
+
+        <!-- University of Zagreb -->
+        <div class="education-card">
+            <h3>University of Zagreb, Centre for Croatian Studies (Zagreb, Croatia)</h3>
+            <p class="degree">Linguistics & Philosophy (Dual-Major Bachelor's/Not finished)</p>
+            <div class="courses">
+                <span class="course-tag">Core Linguistics & Philosophy Courses</span>
+                <span class="course-tag">Critical Thinking & Research Methods</span>
+            </div>
+            <div class="internships">-</div>
+            <p class="dates">2014-2015</p>
+        </div>
+
+        <!-- S.S. Ban Josip Jelačić -->
+        <div class="education-card">
+            <h3>S.S. Ban Josip Jelacic (Zapresic, Croatia)</h3>
+            <p class="degree">Economist Degree</p>
+            <div class="courses">
+                <span class="course-tag">Practice Firm Entrepreneurial Management</span>
+                <span class="course-tag">Computer Science</span>
+                <span class="course-tag">Energetics</span>
+                <span class="course-tag">Marketing</span>
+            </div>
+            <div class="internships">
+                <span class="internship-tag">Dunapack d.o.o. (Junior Economist Internship)</span>
+           
+            </div>
+            <p class="dates">2009-2013</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Experience Section -->
+     
+    <section id="Experience" class="reveal experience-section">
+            <!-- Animated background canvas -->
+    <canvas id="experience-bg"></canvas>
+<div class="section-title">
+    <span class="title-glow"></span>
+    <h1 class="title-text">Experience</h1>
+ </div>
+    <div class="experience-cards">
+        <!-- GIRO Inc. -->
+        <div class="experience-card">
+            <h3>Client Solutions Developer</h3>
+            <div class="company-location">
+                <span class="company">GIRO Inc.</span> - <span class="location">Montreal / Remote</span>
+            </div>
+            <div class="dates">10/2022 - 11/2023</div>
+            <ul class="experience-bullets">
+                <li>Developed ERP and transportation software features, including internal API-driven modules, tailored to client specifications</li>
+                <li>Conducted analysis, tests, and calibrations of API-connected features to enhance performance and reliability</li>
+                <li>Managed and monitored SQL/Oracle databases ensuring data integrity and reliability</li>
+                <li>Delivered German localisation including translation and UI adaptations</li>
+                <li>Collaborated closely with analysts, QA, and dev teams during feature rollout</li>
+            </ul>
+        </div>
+
+        <!-- US Military / Bank of America -->
+        <div class="experience-card">
+            <h3>System Administrator II</h3>
+            <div class="company-location">
+                <span class="company">US Military Operations / Bank of America</span> - <span class="location">Mainz-Kastel, Germany</span>
+            </div>
+            <div class="dates">12/2021 - 10/2022</div>
+            <ul class="experience-bullets">
+                <li>Managed multi-site server and network infrastructure, including Cisco switches/routers, Windows servers, VMs, and secure user environments</li>
+                <li>Led global hardware/software rollout operations, ensuring configuration consistency, security compliance, and seamless integration</li>
+                <li>Monitored critical systems using OPManager and OptiView, performed root-cause analysis, and implemented corrective actions to reduce downtime</li>
+                <li>Developed a centralized patching and server-management system, improving update accuracy and reducing manual workload</li>
+            </ul>
+        </div>
+
+        <!-- Mimi Blue Jam Factory -->
+        <div class="experience-card">
+            <h3>Founder / Web Developer</h3>
+            <div class="company-location">
+                <span class="company">Mimi Blue Jam Factory</span> - <span class="location">Germany / Remote</span>
+            </div>
+            <div class="dates">12/2023 - 10/2025</div>
+            <ul class="experience-bullets">
+                <li>Built and launched a multidisciplinary entertainment and tech brand</li>
+                <li>Developed an interactive website using PHP, JavaScript, AJAX, and CMS tools</li>
+                <li>Managed digital marketing, branding, customer relations, and project workflows</li>
+                <li>Engineered internal automations improving content and operations</li>
+                <li>Designed and developed a custom WordPress theme with a retro-inspired visual style</li>
+            </ul>
+        </div>
+
+        <!-- Donner & Partner GmbH -->
+        <div class="experience-card">
+            <h3>Junior Software Developer</h3>
+            <div class="company-location">
+                <span class="company">Donner & Partner GmbH</span> - <span class="location">Mainz, Germany</span>
+            </div>
+            <div class="dates">09/2020 - 05/2021</div>
+            <ul class="experience-bullets">
+                <li>Engineered a full-stack desktop application using C#, .NET Framework, WPF, and SQL Server</li>
+                <li>Designed UI views, custom controls, and XAML layouts with responsive databinding and event-driven logic</li>
+                <li>Implemented backend modules, repository layers, and service classes for authentication, data persistence, and workflow automation</li>
+                <li>Conducted code reviews, refactoring, and QA testing to enhance performance and maintainability</li>
+            </ul>
+        </div>
+
+        <!-- CarExpert GmbH -->
+        <div class="experience-card">
+            <h3>Data Analyst</h3>
+            <div class="company-location">
+                <span class="company">CarExpert GmbH</span> - <span class="location">Walluf, Germany</span>
+            </div>
+            <div class="dates">07/2017 - 08/2018</div>
+            <ul class="experience-bullets">
+                <li>Trained OCR and AutoML models for a 3D car-damage recognition system</li>
+                <li>Conducted data integrity checks, anomaly detection, and statistical analysis</li>
+                <li>Collaborated with engineering teams to review model performance metrics and propose enhancements</li>
+            </ul>
+        </div>
+   
+</section>
+
+
+    <!-- Fun Facts Section -->
+   <section id="FunFacts" class="reveal funfacts-section">
+    <canvas id="funfacts-bg"></canvas>
+<div class="funfacts-floating-text">
+    <span>ART & CODE</span>
+    <span>MUSIC</span>
+    <span>DISCIPLINE</span>
+    <span>LIVE PERFORMANCE</span>
+    <span>MARTIAL ARTS</span>
+    <span>CREATIVITY</span>
+    <span>HUMAN FACTOR</span>
+    <span>ENGINEERING MINDSET</span>
+</div>
+
+<div class="section-title">
+    <span class="title-glow"></span>
+    <h1 class="title-text">Fun-Facts</h1>
+ </div>
+<p class="funfacts-intro">
+    A few human things behind the code.
+</p>
+
+
+    <div class="funfacts-grid">
+             <div class="funfact-card">
+                <div class="funfact-image">
+        <img src="assets/img/Mimi2.jpg" alt="Guitar Performance in Germany">
+    </div>
+            <h3>Multi-Instrumentalist & Vocalist</h3>
+            <p>
+                I play <strong>drums, guitar, bass, and piano</strong>, and I am also a
+                <strong>singer</strong>. Music and rhythm heavily influence how I think about systems,
+                timing, and flow in software.
+            </p>
+        </div>
+
+        <div class="funfact-card">
+            <div class="funfact-image">
+        <img src="assets/img/Mimi1.png" alt="TV Performance in Croatia">
+    </div>
+            <h3>Television Appearances</h3>
+            <p>
+                I have appeared on multiple <strong>TV channels and shows</strong> as a musician,
+                performing to national audiences across several European countries. 
+
+
+            </p>
+        </div>
+
+        <div class="funfact-card">
+            <div class="funfact-image">
+        <img src="assets/img/Event1.png" alt="Event Performance in Germany">
+    </div>
+            
+            <h3>Community & Social Impact</h3>
+            <p>
+                I organized and led events in Germany promoting
+                <strong>healthy living, anti-drug culture, and self-development</strong>,
+                helping people break destructive habits and reintegrate through creative programs.
+                
+            </p>
+        </div>
+
+        <div class="funfact-card">
+            <div class="funfact-image">
+        <img src="assets/img/Event2.jpg" alt="Tech Event Germany">
+    </div>
+            <h3>Arts Meets Technology</h3>
+            <p>
+                I strongly believe in combining <strong>art, technology, and psychology</strong>.
+                Many of my projects blend creative expression with structured engineering thinking.
+            </p>
+        </div>
+        <div class="funfact-card">
+            <div class="funfact-image">
+        <img src="assets/img/Martial.jpg" alt="Guitar Performance in Germany">
+    </div>
+            <h3>Martial-Arts</h3>
+            <p>
+                In a healthy body, a healthy spirit! <strong>I trained Karate, Muai Thai, Kick Box and Sword Fighting.</strong>
+                I believe that the discipline I learned in this field helped me become an organised, goal-driven individual.
+            </p>
+        </div>
+             <div class="funfact-card">
+                <div class="funfact-image">
+        <img src="assets/img/Mimi3.png" alt="MimiBlue Bow To No One">
+    </div>
+            <h3>Mimi Blue - Bow To No One</h3>
+            <p>
+                I released a song on all streaming platforms.<strong>The lyrics of my song are a strong reminder to the society</strong>
+                that we have to believe in ourselves, read books and keep our head up high.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Contact Section -->
+<section id="contact" class="reveal contact-section">
+    <h1>Contact</h1>
+
+    <div class="contact-container">
+        
+        <!-- Left: Image -->
+        <div class="contact-image">
+            <img src="assets/img/contact-image.jpg" alt="Contact image">
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="contact-content">
+            <h2>Let's build something meaningful</h2>
+            
+            <p>
+                I'm open to new opportunities, collaborations, and interesting technical challenges.
+                Feel free to reach out.
+            </p>
+
+           <div class="contact-details">
+   
+ <div class="contact-details linkedin">
+ 
+    <a href="https://www.linkedin.com/in/milijana-mijatovic-6b8776178/"
+       class="contact-email linkedin-link"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <span>View LinkedIn Profile</span>
+    </a>
+</div>
+
+
+            <div class="contact-actions">
+                <a href="assets/Milijana_Mijatovic_CV.pdf"
+                   class="cv-button"
+                   download>
+                    Download CV
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+   
+</main>
+
+<!-- Scripts -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/language-circles.js"></script>
+<script src="assets/js/reveal.js"></script>
+
+
+<!-- Overview Techy Background Animation -->
+<script>
+const canvas = document.getElementById('overview-bg');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = window.innerWidth * dpr;
+    canvas.height = window.innerHeight * dpr;
+    canvas.style.width = window.innerWidth + 'px';
+    canvas.style.height = window.innerHeight + 'px';
+    ctx.setTransform(1, 0, 0, 1, 0, 0); // reset transform
+    ctx.scale(dpr, dpr);
+}
+
+resizeCanvas();
+
+window.addEventListener('resize', () => {
+    resizeCanvas();
+});
+
+const GRID_SPACING = 120;
+let nodes = [];
+
+function initNodes() {
+    nodes = [];
+    for (let x = GRID_SPACING / 2; x < window.innerWidth; x += GRID_SPACING) {
+        for (let y = GRID_SPACING / 2; y < window.innerHeight; y += GRID_SPACING) {
+            nodes.push({
+                x: x + Math.random() * 20 - 10,
+                y: y + Math.random() * 20 - 10,
+                radius: 3 + Math.random() * 2,
+                phase: Math.random() * Math.PI * 2
+            });
+        }
+    }
+}
+
+initNodes();
+
+function animate() {
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+    // Draw lines
+    for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x;
+            const dy = nodes[i].y - nodes[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 140) {
+                const alpha = 0.2 + 0.3 * Math.sin(Date.now() / 500 + nodes[i].phase);
+                ctx.strokeStyle = `rgba(0,255,255,${alpha})`;
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(nodes[i].x, nodes[i].y);
+                ctx.lineTo(nodes[j].x, nodes[j].y);
+                ctx.stroke();
+            }
+        }
+    }
+
+    // Draw nodes
+    nodes.forEach(node => {
+        const flicker = 0.6 + 0.4 * Math.sin(Date.now() / 300 + node.phase);
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0,255,255,${flicker})`;
+        ctx.fill();
+    });
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+// Recreate nodes on resize
+window.addEventListener('resize', initNodes);
+</script>
+
+
+<script>
+const floatingTexts = document.querySelectorAll('.funfacts-floating-text span');
+
+floatingTexts.forEach(text => {
+    const top = Math.random() * 100; // FULL height
+    const duration = 35 + Math.random() * 50; // slow drift
+    const delay = Math.random() * -10;
+    const scale = 0.6 + Math.random() * 1;
+    const opacity = 0.15 + Math.random() * 0.45;
+    const blur = Math.random() > 0.7 ? 1.5 : 0;
+
+    text.style.top = `${top}%`;
+    text.style.animationDuration = `${duration}s`;
+    text.style.animationDelay = `${delay}s`;
+    text.style.transform = `scale(${scale})`;
+    text.style.opacity = opacity;
+    text.style.filter = `blur(${blur}px)`;
+
+    // Random direction
+    if (Math.random() > 0.5) {
+        text.style.animationDirection = "reverse";
+        text.style.left = "auto";
+        text.style.right = "-40%";
+    }
+});
+
+
+</script>
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>
+            &copy; <span id="year"></span>
+            Created and Designed by Milijana Mijatovic. All rights reserved.
+        </p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/mimiblueyellowyou" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/mimi_blue_jam_factory/" target="_blank">Instagram</a>
+            <a href="https://www.imdb.com/name/nm5659562/?ref_=nmbio_ov_bk" target="_blank">IMDB</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+<script src="assets/js/projects-bg.js"></script>
+
+<script src="assets/js/education-bg.js"></script>
+<script src="assets/js/experience-bg.js"></script>
+<script src="assets/js/funfacts-bg.js"></script>
+
+</body>
+</html>
