@@ -347,7 +347,19 @@ button.read-more:hover {
     color: #00ffff;
     text-align: center;
 }
-
+/* Modal gallery images */
+.modal-gallery img,
+.modal-image img,
+.funfact-image img,
+.skill-card img,
+.education-card img,
+.experience-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0 auto;
+}
 /* Technologies inside modal */
 .modal-tech {
     margin-top: 15px;
