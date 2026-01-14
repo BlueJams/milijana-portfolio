@@ -788,8 +788,8 @@ button.read-more:hover {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
     justify-items: center;
 }
 
@@ -816,6 +816,7 @@ button.read-more:hover {
     margin-bottom: 5px;
      display: inline-block;
     margin: 0 6px 15px 6px;
+    object-fit: contain;
    
 }
 .skill-card img + img {
@@ -832,6 +833,10 @@ button.read-more:hover {
     font-size: 0.9rem;
     color: #b0f0f0;
     line-height: 1.4;
+}
+.skill-icons {
+    display: flex;
+    gap: 12px;
 }
 
 /* === Recommendation Quote === */
