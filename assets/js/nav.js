@@ -9,10 +9,18 @@ links.forEach(link => {
         const targetId = link.getAttribute('href').split('#')[1];
         const target = document.getElementById(targetId);
 
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // ✅ CLOSE MOBILE NAV AFTER CLICK
+        nav.classList.remove('active');
     });
+});
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        modal.style.display = 'none';
+    }
 });
 
 /* Active link on scroll */
@@ -26,13 +34,14 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    links.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
+links.forEach(link => {
+    link.classList.remove('active');
+
+    if (current && link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+    }
 });
+
 
 const modal = document.getElementById("gameModal");
 const modalTitle = document.getElementById("modalTitle");
