@@ -312,7 +312,9 @@ button.read-more:hover {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin: 20px 0;
+      max-height: 60vh; /* viewport height */
+    overflow-y: auto;
+ 
 }
 
 .modal-gallery img {
@@ -323,14 +325,30 @@ button.read-more:hover {
     height: 350px;
      transition: transform 0.3s ease;
      
+     
+}
+.modal-image {
+    flex: 1 1 200px; /* responsive: min 200px wide, grows as needed */
+    max-width: 250px; /* limit maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.modal-image img {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+    object-fit: contain; /* contain image inside container */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
 .modal-caption {
     margin-top: 8px;
     font-size: 0.9rem;
     color: rgba(200, 255, 255, 0.85);
     font-style: italic;
     text-shadow: 0 0 4px rgba(0,255,255,0.3);
+    text-align: center;
 }
 
 /* Technologies inside modal */
