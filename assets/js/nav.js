@@ -27,6 +27,11 @@ document.addEventListener('keydown', e => {
 /* Active link on scroll */
 window.addEventListener('scroll', () => {
     let current = '';
+document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active'); // closes mobile nav
+    });
+});
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 120;
