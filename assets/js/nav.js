@@ -85,3 +85,9 @@ document.querySelector(".modal .close").onclick = () => {
 window.onclick = e => {
     if (e.target === modal) modal.style.display = "none";
 };
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
